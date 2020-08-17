@@ -1,0 +1,63 @@
+.row {
+    position: relative;
+
+    @include clearfix;
+
+    &:not(:last-child) {
+        margin-bottom: $horizontal-margin;
+    }
+}
+
+.col-1-of-2 {
+    float: left;
+    width: calc((100% - #{$vertical-margin}) / 2);
+    
+    &:not(:last-child) {
+        margin-right: $vertical-margin;
+    }
+}
+
+.col-1-of-3 {
+    float: left;
+    width: calc((100% - 2 * #{$vertical-margin}) / 3);
+
+    &:not(:last-child) {
+        margin-right: $vertical-margin;
+    }
+}
+
+.col-2-of-3 {
+    float: left;
+    width: calc(((100% - 2 * #{$vertical-margin}) / 3) * 2 + #{$vertical-margin});
+
+    &:not(:last-child) {
+        margin-right: $vertical-margin;
+    }
+}
+
+.col-1-of-4 {
+    float: left;
+    width: calc((100% - 3 * #{$vertical-margin}) / 4);
+
+    &:not(:last-child) {
+        margin-right: $vertical-margin;
+    }
+}
+
+.col-2-of-4 {
+    float: left;
+    width: calc(2 * (100% - 3 * #{$vertical-margin}) / 4 + #{$vertical-margin});
+
+    &:not(:last-child) {
+        margin-right: $vertical-margin;
+    }
+}
+
+.col-3-of-4 {
+    float: left;
+    width: calc(3 * (100% - 3 * #{$vertical-margin}) / 4 + 2 * #{$vertical-margin});
+
+    &:not(:last-child) {
+        margin-right: $vertical-margin;
+    }
+}

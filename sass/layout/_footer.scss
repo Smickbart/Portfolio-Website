@@ -1,0 +1,25 @@
+.footer {
+    padding: 8rem;
+    background-color: $color-grey-dark;
+    color: $text-color-light;
+    text-align: center;
+    font-size: 1.8rem;
+
+    &__nav {
+        list-style-type: none;
+    }
+
+    &__item {
+        display: inline-block;
+        
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $text-color-light;
+        text-transform: uppercase;
+    }
+}

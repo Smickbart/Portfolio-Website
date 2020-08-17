@@ -1,0 +1,42 @@
+.header {
+    text-transform: uppercase;
+
+    height: 95vh;
+    background-image: linear-gradient(
+                        to bottom right,
+                        rgba($primary-color-light, .7),
+                        rgba($primary-color-dark, .7)),
+                        url("../img/code.jpg");
+
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+
+    &__text-box {
+        color: $color-white;
+        
+        position: absolute;
+        top: 40%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+.heading-primary {
+    text-align: center;   
+
+    &--main {
+        display: block;
+        padding-bottom: 1rem;
+
+        font-size: 6rem;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
+
+    &--sub {
+        display: block;
+
+        font-size: 3rem;
+        letter-spacing: 1.2rem;
+    }
+}
