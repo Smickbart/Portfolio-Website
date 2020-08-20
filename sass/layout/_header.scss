@@ -20,23 +20,3 @@
         transform: translate(-50%, -50%);
     }
 }
-
-.heading-primary {
-    text-align: center;   
-
-    &--main {
-        display: block;
-        padding-bottom: 1rem;
-
-        font-size: 6rem;
-        letter-spacing: 3px;
-        font-weight: 300;
-    }
-
-    &--sub {
-        display: block;
-
-        font-size: 3rem;
-        letter-spacing: 1.2rem;
-    }
-}
