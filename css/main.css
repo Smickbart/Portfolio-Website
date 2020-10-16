@@ -244,6 +244,128 @@ body {
   text-transform: uppercase;
 }
 
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__background {
+  position: fixed;
+  top: 7rem;
+  right: 7rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#d1faff), to(#2190cf));
+  background-image: linear-gradient(to bottom right, #d1faff, #2190cf);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  z-index: 100;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.navigation__nav {
+  position: fixed;
+  z-index: 101;
+  text-align: center;
+  top: 1%;
+  left: 99%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: all .4s ease .15s;
+  transition: all .4s ease .15s;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.navigation__list {
+  list-style-type: none;
+}
+
+.navigation__list li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.navigation__link, .navigation__link:visited {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  color: #555;
+  font-size: 4rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.navigation__link:hover, .navigation__link:visited:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.navigation__button {
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  display: inline-block;
+  background-color: #fff;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  z-index: 1000;
+  text-align: center;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.navigation__button:hover {
+  cursor: pointer;
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  border-radius: 0;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.8rem;
+}
+
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  display: inline-block;
+  width: 3rem;
+  height: 2px;
+  background-color: #333;
+}
+
+.navigation__icon::before, .navigation__icon::after {
+  position: absolute;
+  content: "";
+  left: 0;
+}
+
+.navigation__icon::before {
+  top: -.8rem;
+}
+
+.navigation__icon::after {
+  top: .8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
+}
+
 .section-about {
   padding: 25rem;
 }
