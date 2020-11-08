@@ -38,27 +38,27 @@ body {
 .heading-primary--main {
   display: block;
   padding-bottom: 1rem;
-  font-size: 6rem;
+  font-size: 8rem;
   letter-spacing: 3px;
   font-weight: 300;
 }
 
 .heading-primary--sub {
   display: block;
-  font-size: 3rem;
+  font-size: 5rem;
   letter-spacing: 1.2rem;
 }
 
 .heading-secondary {
   text-align: center;
-  font-size: 6rem;
+  font-size: 8rem;
   color: #fff;
   text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .heading-secondary--dark {
   text-align: center;
-  font-size: 6rem;
+  font-size: 8rem;
   text-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
@@ -150,12 +150,13 @@ body {
 
 .composition {
   position: relative;
-  margin-top: 20rem;
+  margin-top: 12rem;
 }
 
 .composition__image {
-  position: absolute;
-  width: 35%;
+  display: block;
+  margin: 2.5rem auto;
+  width: 50%;
   z-index: 1;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
           box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
@@ -193,16 +194,15 @@ body {
 }
 
 .bio--info {
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  letter-spacing: 1px;
+  font-size: 3rem;
+  line-height: 4rem;
   width: 90%;
   margin: 0 auto;
 }
 
 .header {
   text-transform: uppercase;
-  height: 95vh;
+  height: 50vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(209, 250, 255, 0.7)), to(rgba(33, 144, 207, 0.7))), url("../img/code.jpg");
   background-image: linear-gradient(to bottom right, rgba(209, 250, 255, 0.7), rgba(33, 144, 207, 0.7)), url("../img/code.jpg");
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
@@ -212,7 +212,7 @@ body {
 .header__text-box {
   color: #fff;
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -291,9 +291,9 @@ body {
 
 .navigation__link, .navigation__link:visited {
   text-decoration: none;
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
   color: #555;
-  font-size: 4rem;
+  font-size: 8rem;
   text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
   -webkit-transition: all .2s;
   transition: all .2s;
@@ -311,8 +311,8 @@ body {
   right: 6.5rem;
   display: inline-block;
   background-color: #fff;
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   z-index: 1000;
   text-align: center;
@@ -334,13 +334,13 @@ body {
 
 .navigation__icon {
   position: relative;
-  margin-top: 3.8rem;
+  margin-top: 5.8rem;
 }
 
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   display: inline-block;
-  width: 3rem;
-  height: 2px;
+  width: 5rem;
+  height: 4px;
   background-color: #333;
 }
 
@@ -351,11 +351,11 @@ body {
 }
 
 .navigation__icon::before {
-  top: -.8rem;
+  top: -1.3rem;
 }
 
 .navigation__icon::after {
-  top: .8rem;
+  top: 1.3rem;
 }
 
 .navigation__button:hover .navigation__icon::before {
@@ -367,11 +367,11 @@ body {
 }
 
 .section-about {
-  padding: 25rem;
+  padding: 14rem;
 }
 
 .section-highlights {
-  padding: 10rem 0 55rem 0;
+  padding: 10rem 0 10rem 0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(209, 250, 255, 0.7)), to(rgba(33, 144, 207, 0.7))), url("../img/web-design.jpg");
   background-image: linear-gradient(to bottom right, rgba(209, 250, 255, 0.7), rgba(33, 144, 207, 0.7)), url("../img/web-design.jpg");
   background-size: cover;
@@ -379,3 +379,4 @@ body {
   -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0% 10%);
           clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0% 10%);
 }
+/*# sourceMappingURL=main.css.map */
