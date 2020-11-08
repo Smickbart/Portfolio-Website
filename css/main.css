@@ -194,8 +194,8 @@ body {
 }
 
 .bio--info {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 4.5rem;
+  line-height: 5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -367,7 +367,7 @@ body {
 }
 
 .section-about {
-  padding: 14rem;
+  padding: 14rem 5rem;
 }
 
 .section-highlights {
