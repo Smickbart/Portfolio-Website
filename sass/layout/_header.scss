@@ -20,3 +20,33 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@media only screen and (min-width: 600px) {
+    .header {
+        height: 60vh;
+
+        &__text-box {
+            top: 30%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        height: 80vh;
+
+        &__text-box {
+            top: 40%;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+        height: 95vh;
+
+        &__text-box {
+            top: 40%;
+        }
+    }
+}

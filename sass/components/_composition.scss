@@ -4,34 +4,48 @@
 
     &__image {
         display: block;
-        margin: 2.5rem auto;
-        // position: absolute;
-        width: 50%;
+        margin: 1rem auto;
+        width: 60%;
         z-index: 1;
         box-shadow: .5rem .5rem 1rem rgba($color-black, .6);
+    }
+}
 
-        transition: all .3s;
-
-        &--1 {
-            top: 0;
-            left: 45%;
-        }
-        
-        &--2 {
-            top: 15rem;
-            left: 35%;
-        }
+@media only screen and (min-width: 992px) {
+    .composition {
+        position: relative;
+        margin-top: 12rem;
+        height: $highlights-height;
     
-        &--3 {
-            top: -5rem;
-            left: 15%;
-        }
-
-        &:hover {
-            transform: translateY(-1rem) scale(1.3);
-            z-index: 2;
-
-            box-shadow: 1.5rem 1.5rem 2.5rem rgba($color-black, .6);
+        &__image {
+            position: absolute;
+            width: 40%;
+            z-index: 1;
+            box-shadow: .5rem .5rem 1rem rgba($color-black, .6);
+    
+            transition: all .3s;
+    
+            &--1 {
+                top: 0;
+                left: 45%;
+            }
+            
+            &--2 {
+                top: 33%;
+                left: 35%;
+            }
+        
+            &--3 {
+                top: -16%;
+                left: 15%;
+            }
+    
+            &:hover {
+                transform: translateY(-1rem) scale(1.1);
+                z-index: 2;
+    
+                box-shadow: 1.5rem 1.5rem 2.5rem rgba($color-black, .6);
+            }
         }
     }
 }
