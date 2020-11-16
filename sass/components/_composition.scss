@@ -1,6 +1,6 @@
 .composition {
     position: relative;
-    margin-top: 12rem;
+    margin: 12% 0 6% 0;
 
     &__image {
         display: block;
@@ -14,7 +14,6 @@
 @media only screen and (min-width: 992px) {
     .composition {
         position: relative;
-        margin-top: 12rem;
         height: $highlights-height;
     
         &__image {

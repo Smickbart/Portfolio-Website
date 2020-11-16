@@ -150,7 +150,7 @@ body {
 
 .composition {
   position: relative;
-  margin-top: 12rem;
+  margin: 12% 0 6% 0;
 }
 
 .composition__image {
@@ -165,7 +165,6 @@ body {
 @media only screen and (min-width: 992px) {
   .composition {
     position: relative;
-    margin-top: 12rem;
     height: 30vw;
   }
   .composition__image {
@@ -216,7 +215,7 @@ body {
     padding: 10rem 0;
   }
   .bio--info {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 4rem;
   }
 }
