@@ -1,7 +1,8 @@
 .header {
+    position: relative;
     text-transform: uppercase;
 
-    height: 50vh;
+    height: 60vh;
     background-image: linear-gradient(
                         to bottom right,
                         rgba($primary-color-light, .7),
@@ -14,39 +15,14 @@
         color: $color-white;
         
         position: absolute;
-        top: 25%;
+        top: 45%;
         left: 50%;
 
         transform: translate(-50%, -50%);
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (orientation: landscape) {
     .header {
-        height: 60vh;
-
-        &__text-box {
-            top: 30%;
-        }
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .header {
-        height: 80vh;
-
-        &__text-box {
-            top: 40%;
-        }
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .header {
-        height: 95vh;
-
-        &__text-box {
-            top: 40%;
-        }
-    }
+        height: 90vh;
 }
